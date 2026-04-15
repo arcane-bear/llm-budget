@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-budget"
+version = "0.1.0"
+description = "Per-agent LLM spend tracking and budget enforcement with SQLite"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "arcane-bear" }]
+keywords = ["llm", "budget", "tokens", "cost", "ai", "agents"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "click>=8.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+llm-budget = "llm_budget.cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/arcane-bear/llm-budget"
+Issues = "https://github.com/arcane-bear/llm-budget/issues"
+
+[tool.setuptools.packages.find]
+include = ["llm_budget*"]
