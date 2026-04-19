@@ -33,8 +33,4 @@ dependencies = [
 llm-budget = "llm_budget.cli:cli"
 
 [project.urls]
-Homepage = "https://github.com/arcane-bear/llm-budget"
-Issues = "https://github.com/arcane-bear/llm-budget/issues"
-
-[tool.setuptools.packages.find]
-include = ["llm_budget*"]
+Homepage = "https://rapidclaw.dev"
